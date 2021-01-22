@@ -31,4 +31,5 @@ class MyMoviesAdapter(private val myFavoriteMovies : List<Movie>) : RecyclerView
     }
 
     override fun getItemCount(): Int = myFavoriteMovies.size
+
 }

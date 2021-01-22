@@ -22,7 +22,7 @@ class MyMovies : Fragment() {
         // Inflate the layout for this fragment
         val view =  inflater.inflate(R.layout.fragment_my_movies, container, false)
 
-        val movieList = generateDummyList(10)
+        val movieList = generateDummyList(20)
         val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerMyMovies)
         recyclerView.adapter = MyMoviesAdapter(movieList)
         recyclerView.layoutManager = LinearLayoutManager(this.context)
@@ -33,7 +33,7 @@ class MyMovies : Fragment() {
 
     private fun generateDummyList(size :Int): List<Movie>{
         val list = ArrayList<Movie>()
-        for (i in 0 until size){
+        for (i in 1 until size){
             val drawable = when (i % 3){
                 0-> R.drawable.ic_baseline_local_movies_24
                 1-> R.drawable.ic_baseline_movie_filter_24

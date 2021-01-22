@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="58aa26a9-49b1-4f70-9d0e-01271c504d54" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/MyTheaterApp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/My_Theater/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/My_Theater/app/src/main/java/com/example/mytheater/controllers/activities/DetailActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/My_Theater/app/src/main/res/drawable-v24/ic_search_black_24dp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/My_Theater/app/src/main/res/layout/activity_detail.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/My_Theater/app/src/main/res/layout/toolbar_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/My_Theater/app/src/main/res/menu/menu_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My_Theater/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/My_Theater/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My_Theater/app/src/main/java/com/example/mytheater/controllers/activities/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/My_Theater/app/src/main/java/com/example/mytheater/controllers/activities/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My_Theater/app/src/main/java/com/example/mytheater/controllers/fragments/MyMovies.kt" beforeDir="false" afterPath="$PROJECT_DIR$/My_Theater/app/src/main/java/com/example/mytheater/controllers/fragments/MyMovies.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My_Theater/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/My_Theater/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My_Theater/app/src/main/res/layout/movie_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/My_Theater/app/src/main/res/layout/movie_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My_Theater/app/src/main/res/values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/My_Theater/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My_Theater/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/My_Theater/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My_Theater/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/My_Theater/app/src/main/res/values/themes.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1n75bnU4Knlr0cdA5FkHnsBTABk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/My_Theater" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="58aa26a9-49b1-4f70-9d0e-01271c504d54" name="Default Changelist" comment="" />
+      <created>1610728362853</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610728362853</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="653" y="512" key="FileChooserDialogImpl" timestamp="1610728372175">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="653" y="512" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1610728372175" />
+  </component>
+</project>
