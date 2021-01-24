@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         when (item.itemId){
             R.id.menu_main_search ->{
                 Toast.makeText(this, "Recherche indisponible, demandez plutôt l'avis de Google, c'est mieux et plus rapide.", Toast.LENGTH_LONG).show()
-                launchDetailActivity()
+                launchDSearchActivity()
                 return true
             }
             else-> return super.onOptionsItemSelected(item);
@@ -37,6 +37,11 @@ class MainActivity : AppCompatActivity() {
     fun configureToolBar(){
         var toolbar = findViewById<Toolbar>(R.id.toolbar_main)
         setSupportActionBar(toolbar)
+    }
+
+    fun launchDSearchActivity(){
+        val _Intent  = Intent(this@MainActivity, SearchActivity::class.java)
+        this.startActivity(_Intent)
     }
 
     fun launchDetailActivity(){

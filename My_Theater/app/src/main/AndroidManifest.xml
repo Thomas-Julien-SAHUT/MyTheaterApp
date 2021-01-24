@@ -9,13 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyTheater">
-        <activity android:name=".controllers.activities.DetailActivity"
-            android:label="Detail"
+        <activity
+            android:name=".controllers.activities.SearchActivity"
+            android:label="Search"
             android:parentActivityName=".controllers.activities.MainActivity">
-
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".controllers.activities.MainActivity"/>
+                android:value=".controllers.activities.MainActivity" />
         </activity>
         <activity android:name=".controllers.activities.MainActivity">
             <intent-filter>

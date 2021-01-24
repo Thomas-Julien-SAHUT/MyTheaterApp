@@ -9,13 +9,13 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.mytheater.R
 import com.example.mytheater.models.Movie
 
-class MyMoviesAdapter(
-    private val myFavoriteMovies : List<Movie>,
+class SearchMoviesAdapter(
+    private val SearchMovies : List<Movie>,
     private val listener: OnItemClickListener)
-    : RecyclerView.Adapter<MyMoviesAdapter.MyMoviesViewHolder>() {
+    : RecyclerView.Adapter<SearchMoviesAdapter.SearchMoviesViewHolder>() {
 
-    inner class MyMoviesViewHolder (itemView : View) : RecyclerView.ViewHolder(itemView),View.OnClickListener{
-        val imgMyMovie : ImageView = itemView.findViewById(R.id.imgMovieItem)
+    inner class SearchMoviesViewHolder (itemView : View) : RecyclerView.ViewHolder(itemView), View.OnClickListener{
+        val imgSearchMovie : ImageView = itemView.findViewById(R.id.imgMovieItem)
         val txtName : TextView = itemView.findViewById(R.id.txtMovieItemName)
         val txtDate : TextView = itemView.findViewById(R.id.txtMovieItemDate)
 
@@ -37,20 +37,19 @@ class MyMoviesAdapter(
         }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyMoviesViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SearchMoviesViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.movie_item, parent, false)
 
-        return MyMoviesViewHolder(itemView)
+        return SearchMoviesViewHolder(itemView)
     }
 
-    override fun onBindViewHolder(holder: MyMoviesViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: SearchMoviesViewHolder, position: Int) {
 
-        val currentItem = myFavoriteMovies[position]
-        holder.imgMyMovie.setImageResource(currentItem.imageRessource)
+        val currentItem = SearchMovies[position]
+        holder.imgSearchMovie.setImageResource(currentItem.imageRessource)
         holder.txtName.setText(currentItem.name)
         holder.txtDate.setText(currentItem.date)
     }
 
-    override fun getItemCount(): Int = myFavoriteMovies.size
-
+    override fun getItemCount(): Int = SearchMovies.size
 }
