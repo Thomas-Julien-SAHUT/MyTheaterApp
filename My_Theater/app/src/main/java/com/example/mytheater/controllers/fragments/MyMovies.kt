@@ -10,14 +10,17 @@ import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mytheater.R
+import com.example.mytheater.controllers.stub.Stub
 import com.example.mytheater.models.Movie
 import com.example.mytheater.services.MyMoviesAdapter
+import com.example.mytheater.viewmodels.MovieViewModel
+import com.example.mytheater.viewmodels.MyMovieViewModel
 import java.util.*
 import kotlin.collections.ArrayList
 
 class MyMovies : Fragment(), MyMoviesAdapter.OnItemClickListener {
 
-    private lateinit var movieList : List<Movie>
+    private lateinit var movieList : List<MyMovieViewModel>
     private lateinit var adapter : MyMoviesAdapter
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -26,7 +29,7 @@ class MyMovies : Fragment(), MyMoviesAdapter.OnItemClickListener {
         // Inflate the layout for this fragment
         val view =  inflater.inflate(R.layout.fragment_my_movies, container, false)
 
-        movieList = generateDummyList(20)
+        movieList = Stub.generateMyDummyList(20)
         val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerMyMovies)
         adapter = MyMoviesAdapter(movieList,this)
         recyclerView.adapter = adapter
@@ -38,22 +41,8 @@ class MyMovies : Fragment(), MyMoviesAdapter.OnItemClickListener {
 
     override fun onItemCLick(position: Int) {
         val clickedItem = movieList[position]
-        Toast.makeText(this.context, "Item " + clickedItem.name + "clicked", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this.context, clickedItem.name + "clicked", Toast.LENGTH_SHORT).show()
         adapter.notifyItemChanged(position)
     }
 
-    private fun generateDummyList(size :Int): List<Movie>{
-        val list = ArrayList<Movie>()
-        for (i in 1 until size){
-            val drawable = when (i % 3){
-                0-> R.drawable.ic_baseline_local_movies_24
-                1-> R.drawable.ic_baseline_movie_filter_24
-                else-> R.drawable.ic_baseline_ondemand_video_24
-            }
-
-            val item = Movie(drawable,"Item $i", "Line ${Date()}")
-            list+=item
-        }
-        return list
-    }
 }

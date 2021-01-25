@@ -8,9 +8,10 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mytheater.R
 import com.example.mytheater.models.Movie
+import com.example.mytheater.viewmodels.MyMovieViewModel
 
 class MyMoviesAdapter(
-    private val myFavoriteMovies : List<Movie>,
+    private val myFavoriteMovies : List<MyMovieViewModel>,
     private val listener: OnItemClickListener)
     : RecyclerView.Adapter<MyMoviesAdapter.MyMoviesViewHolder>() {
 
@@ -46,7 +47,7 @@ class MyMoviesAdapter(
     override fun onBindViewHolder(holder: MyMoviesViewHolder, position: Int) {
 
         val currentItem = myFavoriteMovies[position]
-        holder.imgMyMovie.setImageResource(currentItem.imageRessource)
+        holder.imgMyMovie.setImageResource(currentItem.imageResource)
         holder.txtName.setText(currentItem.name)
         holder.txtDate.setText(currentItem.date)
     }

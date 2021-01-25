@@ -1,4 +1,4 @@
 package com.example.mytheater.models
 
-class Theater {
+class Theater (val listSearchMovies: ArrayList<Movie>, val listMyMovies: ArrayList<MyMovie>) {
 }

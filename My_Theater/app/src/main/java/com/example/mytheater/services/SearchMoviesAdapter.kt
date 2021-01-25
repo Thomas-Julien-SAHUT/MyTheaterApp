@@ -8,9 +8,10 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mytheater.R
 import com.example.mytheater.models.Movie
+import com.example.mytheater.viewmodels.MovieViewModel
 
 class SearchMoviesAdapter(
-    private val SearchMovies : List<Movie>,
+    private val SearchMovies : List<MovieViewModel>,
     private val listener: OnItemClickListener)
     : RecyclerView.Adapter<SearchMoviesAdapter.SearchMoviesViewHolder>() {
 
@@ -46,7 +47,7 @@ class SearchMoviesAdapter(
     override fun onBindViewHolder(holder: SearchMoviesViewHolder, position: Int) {
 
         val currentItem = SearchMovies[position]
-        holder.imgSearchMovie.setImageResource(currentItem.imageRessource)
+        holder.imgSearchMovie.setImageResource(currentItem.imageResource)
         holder.txtName.setText(currentItem.name)
         holder.txtDate.setText(currentItem.date)
     }
