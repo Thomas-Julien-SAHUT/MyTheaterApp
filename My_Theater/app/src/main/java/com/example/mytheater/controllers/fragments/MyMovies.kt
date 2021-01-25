@@ -5,18 +5,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Adapter
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mytheater.R
 import com.example.mytheater.controllers.stub.Stub
-import com.example.mytheater.models.Movie
 import com.example.mytheater.services.MyMoviesAdapter
-import com.example.mytheater.viewmodels.MovieViewModel
 import com.example.mytheater.viewmodels.MyMovieViewModel
-import java.util.*
-import kotlin.collections.ArrayList
 
 class MyMovies : Fragment(), MyMoviesAdapter.OnItemClickListener {
 
