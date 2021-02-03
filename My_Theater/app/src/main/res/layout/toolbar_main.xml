@@ -13,4 +13,11 @@
     android:background="?attr/colorPrimary"
 
     android:theme="@style/ToolbarTheme"
-    app:titleTextAppearance="@style/Toolbar.TitleText" />
+    app:titleTextAppearance="@style/Toolbar.TitleText" >
+
+    <EditText
+        android:id="@+id/editSearchMovie"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        />
+    </androidx.appcompat.widget.Toolbar>
