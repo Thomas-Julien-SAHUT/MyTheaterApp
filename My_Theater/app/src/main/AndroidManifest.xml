@@ -23,7 +23,7 @@
         android:required="false"/>
 
     <application
-        android:name=".myApp.CinetimeApplication"
+        android:name=".myApp.MyTheaterApplication"
         android:allowBackup="true"
         android:backupAgent=".myApp.MyTheaterBackupHelper"
         android:icon="@drawable/ic_launcher"

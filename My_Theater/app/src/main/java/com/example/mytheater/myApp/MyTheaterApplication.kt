@@ -15,7 +15,7 @@ import com.nostra13.universalimageloader.core.ImageLoader
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration
 
 @Suppress("DEPRECATION")
-class CinetimeApplication : Application() {
+class MyTheaterApplication : Application() {
     override fun onCreate() {
         super.onCreate()
 
