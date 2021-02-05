@@ -1,10 +1,5 @@
 package com.example.mytheater.myApp.objects
 
-/**
- * Holkds datas for one theater
- *
- * @author neamar
- */
 class Theater {
     @JvmField
     var code: String? = null

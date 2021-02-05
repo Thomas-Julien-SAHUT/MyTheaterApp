@@ -3,11 +3,6 @@ package com.example.mytheater.myApp.objects
 import android.text.Html
 import java.util.*
 
-/**
- * Holds datas for one movie.
- *
- * @author neamar
- */
 class Movie : Comparable<Movie> {
     var code: String? = null
     @JvmField

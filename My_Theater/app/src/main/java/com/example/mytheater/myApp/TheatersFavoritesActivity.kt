@@ -5,7 +5,6 @@ import android.content.pm.PackageManager
 import android.os.Bundle
 import android.widget.Toast
 import com.example.mytheater.R
-import com.example.mytheater.myApp.db.DBHelper
 import com.example.mytheater.myApp.db.DBHelper.getFavorites
 import com.example.mytheater.myApp.objects.Theater
 import java.util.*

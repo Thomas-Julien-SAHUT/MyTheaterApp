@@ -19,13 +19,13 @@ class CinetimeApplication : Application() {
     override fun onCreate() {
         super.onCreate()
 
-        val channelId = "com.example.mytheater.myApp"
-        val description = "Notification d'accueuil"
+        var channelId = "com.example.mytheater.myApp"
+        var description = "Notification d'accueuil"
 
         var notificationManager : NotificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
 
         var intent = Intent(this, Activity::class.java)
-        val pendingIntent = PendingIntent.getActivity(this,0, intent,PendingIntent.FLAG_UPDATE_CURRENT)
+        var pendingIntent = PendingIntent.getActivity(this,0, intent,PendingIntent.FLAG_UPDATE_CURRENT)
         var builder : Notification.Builder
 
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O){
